@@ -106,16 +106,22 @@ html,body{
 .panel:hover .grid-lines{opacity:1}
 
 /* ââ HEADER BLOCK (top of each panel) ââ */
-.panel-header{
+@media (max-width: 768px) {
+
+  .panel-1 .panel-header {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
-  .panel-num{
+  .panel-1 .panel-num {
     position: static;
-    margin-top: 4px;
+    margin-top: 5px;
   }
+
+}
 
 
 
