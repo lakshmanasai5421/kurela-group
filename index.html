@@ -370,7 +370,22 @@ html,body{
   .biz-desc{max-height:none !important;opacity:1 !important}
   .biz-tags{max-height:none !important;opacity:1 !important}
   .visit-link{opacity:1 !important;transform:none !important}
-  .center-title{display:none}
+  .center-title{
+  display:flex;
+  position:relative;
+  top:auto;
+  left:auto;
+  transform:none;
+  width:100%;
+  margin:0 auto;
+  border-radius:0;
+  background:linear-gradient(180deg,rgba(5,8,16,0.95),rgba(5,8,16,0.90));
+  border:none;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  padding:2rem 1.5rem;
+}
   .hover-hint{display:none}
   .contact-cta{
     position:sticky;
@@ -384,10 +399,9 @@ html,body{
 .panel-header{
   padding:1.25rem 1.5rem;
   display:flex;
-  flex-direction:column;
+  justify-content:center;
   align-items:center;
-  gap:8px;
-}
+}  
 .panel-content{padding:1.5rem}
 }
 </style>
